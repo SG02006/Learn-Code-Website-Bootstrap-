@@ -1,0 +1,1160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+  <!-- laptop -->
+    <div class="w-100 h-25  d-none d-xl-block d-xxl-block d-lg-block   ">
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">LearnCode</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Topics
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="http://127.0.0.1:5500/HTML.html">HTML Blogs</a></li>
+                                <li><a class="dropdown-item" href="http://127.0.0.1:5500/CSS.html">CSS Blogs</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="http://127.0.0.1:5500/Java%20Script.html">JavaScript
+                                        Blogs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="Contacts.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                    <div class="mx-2">
+                        <button class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#LoginModal">Login</button>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+                            Up</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+         <!-- Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Log in Here</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary">Log in</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign in Here</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--SLIDES-->
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://media.istockphoto.com/id/1319504131/vector/programming-languages-on-tech-blue-background-with-code-elements-and-lines-of-light-3d.jpg?s=612x612&w=0&k=20&c=RS3XdJAHueHx9TIEVKN2z2H3txViuAPE3Nf-iH013vY="
+                        class="d-block w-100" alt="..." height="750" width="750">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>HTML For Frontend</h5>
+                        <p>Learn HTML like never before with VS code.</p>
+                        <button type="button" class="btn btn-dark">HTML</button>
+                        <button type="button" class="btn btn-dark">CSS</button>
+                        <button type="button" class="btn btn-dark">Java Script</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/1001279256/vector/technology-network-background.jpg?s=612x612&w=0&k=20&c=paF8I7sCkHbt2jHwRI1cpxUz2pX1F26SKl0XeugJEno="
+                        class="d-block w-100" alt="..." height="750" width="750">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>CSS For Frontend</h5>
+                        <p>Learn CSS like never before with VS code.</p>
+                        <button type="button" class="btn btn-dark">HTML</button>
+                        <button type="button" class="btn btn-dark">CSS</button>
+                        <button type="button" class="btn btn-dark">Java Script</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/1362729805/photo/coding-on-smart-screen-in-the-system-with-names-of-program-languages-3d.jpg?s=612x612&w=0&k=20&c=rC1zSNtTYXObmCieSDHn98uQjIroko7axXsDKXq_Dp4="
+                        class="d-block w-100" alt="..." height="750" width="750">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Java Script For Frontend</h5>
+                        <p>Learn Java Script like never before with VS code.</p>
+                        <button type="button" class="btn btn-dark">HTML</button>
+                        <button type="button" class="btn btn-dark">CSS</button>
+                        <button type="button" class="btn btn-dark">Java Script</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container my-4">
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-danger">Frontend </strong>
+                            <h3 class="mb-0">HTML</h3>
+                            <div class="mb-1 text-muted">Nov 12</div>
+                            <p class="card-text mb-auto">Lear HTML like never before with VS code ...Perfection lies in
+                                your
+                                Hands</p>
+                            <a href="#" class="stretched-link"><button type="button"
+                                    class="btn btn-outline-danger">Continue</button></a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
+                                alt="" height="250" width="200">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">Frontend</strong>
+                            <h3 class="mb-0">CSS</h3>
+                            <div class="mb-1 text-muted">Nov 11</div>
+                            <p class="mb-auto">Learn CSS like never before with VS code ...Perfection lies in your Hands
+                            </p>
+                            <a href="#" class="stretched-link"><button type="button"
+                                    class="btn btn-outline-primary">Continue</button></a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img src="https://media.istockphoto.com/id/1413514596/photo/stylized-3d-css-icon-design.jpg?s=612x612&w=0&k=20&c=AO7LVxgIs-flkGxxQFXbTD6H3HLfNyq07zf8Riiu6sM="
+                                alt="" height="250" width="200">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-4">
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-warning">Frontend</strong>
+                            <h3 class="mb-0">JavaScript</h3>
+                            <div class="mb-1 text-muted">Nov 12</div>
+                            <p class="card-text mb-auto">Learn JavaScript like never before with VS code ...Perfection
+                                lies
+                                in your Hands</p>
+                            <a href="#" class="stretched-link"><button type="button"
+                                    class="btn btn-outline-warning">Continue</button> </a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                width="200" height="250" x="0" y="0" viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                <g>
+                                    <path fill="#ffdf00" d="M0 0h512v512H0z" data-original="#ffdf00" class=""></path>
+                                    <path
+                                        d="M343.934 400.002c10.313 16.839 23.731 29.216 47.462 29.216 19.935 0 32.67-9.964 32.67-23.731 0-16.498-13.084-22.341-35.027-31.939l-12.028-5.161c-34.719-14.791-57.783-33.321-57.783-72.493 0-36.084 27.494-63.553 70.461-63.553 30.59 0 52.582 10.646 68.429 38.522l-37.465 24.056c-8.249-14.791-17.148-20.618-30.964-20.618-14.092 0-23.024 8.94-23.024 20.618 0 14.434 8.94 20.277 29.582 29.217l12.028 5.152c40.879 17.53 63.959 35.401 63.959 75.581 0 43.317-34.028 67.048-79.726 67.048-44.682 0-73.549-21.293-87.674-49.201zm-169.96 4.169c7.558 13.41 14.434 24.747 30.964 24.747 15.807 0 25.779-6.185 25.779-30.232V235.089h48.112v164.246c0 49.818-29.208 72.493-71.843 72.493-38.522 0-60.83-19.936-72.176-43.947z"
+                                        fill="#000000" data-original="#000000"></path>
+                                </g>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success">Frontend</strong>
+                            <h3 class="mb-0">Python</h3>
+                            <div class="mb-1 text-muted">Nov 11</div>
+                            <p class="mb-auto">Learn Python like never before with VS code ...Perfection lies in your
+                                Hands
+                            </p>
+                            <a href="#" class="stretched-link"><button type="button"
+                                    class="btn btn-outline-success">Continue</button></a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                width="200" height="250" x="0" y="0" viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                <g>
+                                    <path
+                                        d="M116 296c0-30.328 24.672-55 55-55h170c13.785 0 25-11.215 25-25V75c0-41.355-33.645-75-75-75h-70c-41.355 0-75 33.645-75 75v41h110c8.285 0 15 6.715 15 15s-6.715 15-15 15H75c-41.355 0-75 33.645-75 75v70c0 41.355 33.645 75 75 75h41zM221 76c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0"
+                                        fill="#35c013" data-original="#000000" class=""></path>
+                                    <path
+                                        d="M437 146h-41v70c0 30.328-24.672 55-55 55H171c-13.785 0-25 11.215-25 25v141c0 41.355 33.645 75 75 75h70c41.355 0 75-33.645 75-75v-41H256c-8.285 0-15-6.715-15-15s6.715-15 15-15h181c41.355 0 75-33.645 75-75v-70c0-41.355-33.645-75-75-75zM291 436c8.285 0 15 6.715 15 15s-6.715 15-15 15-15-6.715-15-15 6.715-15 15-15zm0 0"
+                                        fill="#35c013" data-original="#000000" class=""></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  <div class="jum bg-dark display-flex align-content-center">-->
+        <div class="d-flex justify-content-center w-full" style="width: 100%; ">
+            <div class="jumbotron" class="d-flex justify-content-center  "
+                style="width: 950px; background-color: rgb(242, 244, 244);">
+                <h1 class="display-2  ">Professional Web Designing!</h1>
+                <p class="lead">Each and every step will take you to the destiny of becoming a professionl web
+                    designer with all the key aspects , that are requierd .</p>
+                <hr class="my-4">
+                <p>Are you ready to take the fiert step towards your enchantting goal of becoming a perfect frontend
+                    developer.
+                </p>
+                <p class="lead">
+                    <a class="btn btn-dark btn-lg" href="#" role="button">Learn more</a>
+                </p>
+            </div>
+        </div>
+        <div class="container marketing my-4">
+
+            <div class="cen d-flex justify-content-center">
+                <h1> KEY FEATURES.</h1>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row ">
+                <div class="col-lg-4  ">
+                    <div class="cir d-flex justify-content-center">
+                        <img class="rounded-circle " src="images/figma.png" width="140" height="140">
+                    </div>
+                    <div class="cir d-flex justify-content-center">
+                        <h2>Figma</h2>
+                    </div>
+                    <p>Figma is a collaborative web application for interface design, with additional offline features
+                        enabled by desktop applications for macOS and Windows.</p>
+                    <div class="cir d-flex justify-content-center">
+                        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                    </div>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="cir d-flex justify-content-center">
+                        <img class="rounded-circle" src="images/bootstrap.jpeg" width="140" height="140">
+                    </div>
+                    <div class="cir d-flex justify-content-center">
+                        <h2>Bootstrap</h2>
+                    </div>
+                    <p>Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to
+                        12
+                        columns as the device or viewport size increases.</p>
+                    <div class="cir d-flex justify-content-center">
+                        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                    </div>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="cir d-flex justify-content-center">
+                        <img class="rounded-circle" src="images/tailwind.png" width="140" height="140">
+                    </div>
+                    <div class="cir d-flex justify-content-center">
+                        <h2>Tailwind</h2>
+                    </div>
+                    <p>Tailwind CSS creates small utilities with a defined set of options enabling easy integration of
+                        existing classes directly into the HTML code.</p>
+                    <div class="cir d-flex justify-content-center">
+                        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                    </div>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+
+        </div>
+        <hr class="featurette-divider">
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2017–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+
+
+    </div>
+    </div>
+
+    <!-- tablet -->
+    <div class="w-full h-25  d-none d-sm-block d-md-block  d-lg-none">
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Learncode</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Topics
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="http://127.0.0.1:5500/HTML.html">HTML Blogs</a>
+                                </li>
+                                <li><a class="dropdown-item" href="http://127.0.0.1:5500/CSS.html">CSS Blogs</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="http://127.0.0.1:5500/Java%20Script.html">JavaScript
+                                        Blogs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="Contacts.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                    <div class="mx-2">
+                        <button class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#LoginModal">Login</button>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+                            Up</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+         <!-- Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Log in Here</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary">Log in</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign in Here</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--SLIDES-->
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://media.istockphoto.com/id/1319504131/vector/programming-languages-on-tech-blue-background-with-code-elements-and-lines-of-light-3d.jpg?s=612x612&w=0&k=20&c=RS3XdJAHueHx9TIEVKN2z2H3txViuAPE3Nf-iH013vY="
+                        class="d-block w-100" alt="..." height="450" width="250">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>HTML For Frontend</h5>
+                        <p>Learn HTML like never before with VS code.</p>
+                        <button type="button" class="btn btn-dark">HTML</button>
+                        <button type="button" class="btn btn-dark">CSS</button>
+                        <button type="button" class="btn btn-dark">Java Script</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/1001279256/vector/technology-network-background.jpg?s=612x612&w=0&k=20&c=paF8I7sCkHbt2jHwRI1cpxUz2pX1F26SKl0XeugJEno="
+                        class="d-block w-100" alt="..." height="450" width="250">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>CSS For Frontend</h5>
+                        <p>Learn CSS like never before with VS code.</p>
+                        <button type="button" class="btn btn-dark">HTML</button>
+                        <button type="button" class="btn btn-dark">CSS</button>
+                        <button type="button" class="btn btn-dark">Java Script</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/1362729805/photo/coding-on-smart-screen-in-the-system-with-names-of-program-languages-3d.jpg?s=612x612&w=0&k=20&c=rC1zSNtTYXObmCieSDHn98uQjIroko7axXsDKXq_Dp4="
+                        class="d-block w-100" alt="..." height="450" width="250">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Java Script For Frontend</h5>
+                        <p>Learn Java Script like never before with VS code.</p>
+                        <button type="button" class="btn btn-dark">HTML</button>
+                        <button type="button" class="btn btn-dark">CSS</button>
+                        <button type="button" class="btn btn-dark">Java Script</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container my-4">
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col-7 p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-danger">Frontend </strong>
+                            <h3 class="mb-0" style="font-size: 22px;">HTML</h3>
+                            <div class="mb-1 text-muted" style="font-size: small;">Nov 12</div>
+                            <p class="card-text mb-auto " style="font-size: 14px;">Learn HTML like never before with
+                                VS code ...</p>
+                            <a href="#" class="stretched-link mt-2"><button type="button"
+                                    class="btn btn-outline-danger ">Continue</button></a>
+                        </div>
+                        <div class="col-5 ">
+                            <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
+                                alt="" height="216" width="150">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">Frontend</strong>
+                            <h3 class="mb-0" style="font-size: 22px;">CSS</h3>
+                            <div class="mb-1 text-muted" style="font-size: small;">Nov 11</div>
+                            <p class="card-text mb-auto" style="font-size: 14px;">Learn CSS like never before with
+                                VS
+                                code ...
+                            </p>
+                            <a href="#" class="stretched-link mt-2"><button type="button"
+                                    class="btn btn-outline-primary">Continue</button></a>
+                        </div>
+                        <div class="col-5">
+                            <img src="https://media.istockphoto.com/id/1413514596/photo/stylized-3d-css-icon-design.jpg?s=612x612&w=0&k=20&c=AO7LVxgIs-flkGxxQFXbTD6H3HLfNyq07zf8Riiu6sM="
+                                alt="" height="212" width="150">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-4">
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-warning">Frontend</strong>
+                            <h3 class="mb-0" style="font-size: 22px;">JavaScript</h3>
+                            <div class="mb-1 text-muted" style="font-size: small;">Nov 12</div>
+                            <p class="card-text mb-auto" style="font-size: 14px;">Learn JavaScript like never before
+                                with VS code ...
+                            </p>
+                            <a href="#" class="stretched-link"><button type="button"
+                                    class="btn btn-outline-warning">Continue</button> </a>
+                        </div>
+                        <div class="col-5 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                width="140" height="240" x="0" y="0" viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                <g>
+                                    <path fill="#ffdf00" d="M0 0h512v512H0z" data-original="#ffdf00" class="">
+                                    </path>
+                                    <path
+                                        d="M343.934 400.002c10.313 16.839 23.731 29.216 47.462 29.216 19.935 0 32.67-9.964 32.67-23.731 0-16.498-13.084-22.341-35.027-31.939l-12.028-5.161c-34.719-14.791-57.783-33.321-57.783-72.493 0-36.084 27.494-63.553 70.461-63.553 30.59 0 52.582 10.646 68.429 38.522l-37.465 24.056c-8.249-14.791-17.148-20.618-30.964-20.618-14.092 0-23.024 8.94-23.024 20.618 0 14.434 8.94 20.277 29.582 29.217l12.028 5.152c40.879 17.53 63.959 35.401 63.959 75.581 0 43.317-34.028 67.048-79.726 67.048-44.682 0-73.549-21.293-87.674-49.201zm-169.96 4.169c7.558 13.41 14.434 24.747 30.964 24.747 15.807 0 25.779-6.185 25.779-30.232V235.089h48.112v164.246c0 49.818-29.208 72.493-71.843 72.493-38.522 0-60.83-19.936-72.176-43.947z"
+                                        fill="#000000" data-original="#000000"></path>
+                                </g>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success">Frontend</strong>
+                            <h3 class="mb-0" style="font-size: 22px;">Python</h3>
+                            <div class="mb-1 text-muted" style="font-size: small;">Nov 11</div>
+                            <p class="mb-auto" style="font-size: 14px;">Learn Python like never before with VS code
+                                ...
+
+                            </p>
+                            <a href="#" class="stretched-link"><button type="button"
+                                    class="btn btn-outline-success">Continue</button></a>
+                        </div>
+                        <div class="col-auto ">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                width="140" height="240" x="0" y="0" viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                <g>
+                                    <path
+                                        d="M116 296c0-30.328 24.672-55 55-55h170c13.785 0 25-11.215 25-25V75c0-41.355-33.645-75-75-75h-70c-41.355 0-75 33.645-75 75v41h110c8.285 0 15 6.715 15 15s-6.715 15-15 15H75c-41.355 0-75 33.645-75 75v70c0 41.355 33.645 75 75 75h41zM221 76c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0"
+                                        fill="#35c013" data-original="#000000" class=""></path>
+                                    <path
+                                        d="M437 146h-41v70c0 30.328-24.672 55-55 55H171c-13.785 0-25 11.215-25 25v141c0 41.355 33.645 75 75 75h70c41.355 0 75-33.645 75-75v-41H256c-8.285 0-15-6.715-15-15s6.715-15 15-15h181c41.355 0 75-33.645 75-75v-70c0-41.355-33.645-75-75-75zM291 436c8.285 0 15 6.715 15 15s-6.715 15-15 15-15-6.715-15-15 6.715-15 15-15zm0 0"
+                                        fill="#35c013" data-original="#000000" class=""></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  <div class="jum bg-dark display-flex align-content-center">-->
+        <div class="d-flex justify-content-center w-full" style="width: 100%; ">
+            <div class="jumbotron" class="d-flex justify-content-center  "
+                style="width: 550px; background-color: rgb(247, 249, 249);">
+                <p class="display-2  " style="font-size: 40px;font-weight: bold;">Professional Web Designing!</p>
+                <p class="lead">Each and every step will take you to the destiny of becoming a professionl web
+                    designer .</p>
+                <hr class="my-4">
+                <p>Are you ready to take the fiert step towards your enchantting goal of becoming a perfect frontend
+                    developer.
+                </p>
+                <p class="lead">
+                    <a class="btn btn-dark btn-lg" href="#" role="button">Learn more</a>
+                </p>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="container marketing my-4">
+
+            <div class="cen d-flex justify-content-center">
+                <h1> KEY FEATURES.</h1>
+            </div>
+
+            <hr class="featurette-divider">
+            <!-- Three columns of text below the carousel -->
+            <div class="row ">
+                <div class="col-lg-4  ">
+                    <div class="cir d-flex justify-content-center">
+                        <img class="rounded-circle " src="images/figma.png" width="140" height="140">
+                    </div>
+                    <div class="cir d-flex justify-content-center">
+                        <h2>Figma</h2>
+                    </div>
+                    <p style="padding-left: 100px;padding-right: 80px;">Figma is a collaborative web application for
+                        interface design, with additional offline features
+                        enabled by desktop applications for macOS and Windows.</p>
+                    <div class="cir d-flex justify-content-center">
+                        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                    </div>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="cir d-flex justify-content-center">
+                        <img class="rounded-circle" src="images/bootstrap.jpeg" width="140" height="140">
+                    </div>
+                    <div class="cir d-flex justify-content-center">
+                        <h2>Bootstrap</h2>
+                    </div>
+                    <p style="padding-left: 100px;padding-right: 80px;">Bootstrap includes a responsive, mobile first
+                        fluid grid system that appropriately scales up to
+                        12
+                        columns as the device or viewport size increases.</p>
+                    <div class="cir d-flex justify-content-center">
+                        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                    </div>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="cir d-flex justify-content-center">
+                        <img class="rounded-circle" src="images/tailwind.png" width="140" height="140">
+                    </div>
+                    <div class="cir d-flex justify-content-center">
+                        <h2>Tailwind</h2>
+                    </div>
+                    <p style="padding-left: 100px;padding-right: 80px;">Tailwind CSS creates small utilities with a
+                        defined set of options enabling easy integration of
+                        existing classes directly into the HTML code.</p>
+                    <div class="cir d-flex justify-content-center">
+                        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                    </div>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+
+        </div>
+        <hr class="featurette-divider">
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2017–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+
+
+
+    </div>
+
+
+    <!-- mobile -->
+    <div class="w-100 h-25  d-block d-sm-none">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">LearnCode</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Topics
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="http://127.0.0.1:5500/HTML.html">HTML Blogs</a>
+                                </li>
+                                <li><a class="dropdown-item" href="http://127.0.0.1:5500/CSS.html">CSS Blogs</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="http://127.0.0.1:5500/Java%20Script.html">JavaScript
+                                        Blogs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="Contacts.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                    <div class="mx-2">
+                        <button class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#LoginModal">Login</button>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+                            Up</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+         <!-- Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Log in Here</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary">Log in</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign in Here</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--SLIDES-->
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://media.istockphoto.com/id/1319504131/vector/programming-languages-on-tech-blue-background-with-code-elements-and-lines-of-light-3d.jpg?s=612x612&w=0&k=20&c=RS3XdJAHueHx9TIEVKN2z2H3txViuAPE3Nf-iH013vY="
+                        class="d-block w-100" alt="..." height="250" width="150">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>HTML For Frontend</h5>
+                        <p>Learn HTML like never before with VS code.</p>
+                        <button type="button" class="btn btn-dark">HTML</button>
+                        <button type="button" class="btn btn-dark">CSS</button>
+                        <button type="button" class="btn btn-dark">Java Script</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/1001279256/vector/technology-network-background.jpg?s=612x612&w=0&k=20&c=paF8I7sCkHbt2jHwRI1cpxUz2pX1F26SKl0XeugJEno="
+                        class="d-block w-100" alt="..." height="250" width="150">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>CSS For Frontend</h5>
+                        <p>Learn CSS like never before with VS code.</p>
+                        <button type="button" class="btn btn-dark">HTML</button>
+                        <button type="button" class="btn btn-dark">CSS</button>
+                        <button type="button" class="btn btn-dark">Java Script</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/1362729805/photo/coding-on-smart-screen-in-the-system-with-names-of-program-languages-3d.jpg?s=612x612&w=0&k=20&c=rC1zSNtTYXObmCieSDHn98uQjIroko7axXsDKXq_Dp4="
+                        class="d-block w-100" alt="..." height="250" width="150">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Java Script For Frontend</h5>
+                        <p>Learn Java Script like never before with VS code.</p>
+                        <button type="button" class="btn btn-dark">HTML</button>
+                        <button type="button" class="btn btn-dark">CSS</button>
+                        <button type="button" class="btn btn-dark">Java Script</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container my-4">
+            <div class="row mb-2">
+                <div class="col-md-4">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col-6 p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-danger">Frontend </strong>
+                            <h3 class="mb-0">HTML</h3>
+                            <div class="mb-1 text-muted">Nov 12</div>
+                            <p class="card-text mb-auto">Lear HTML like never before with VS code ...
+                                Hands</p>
+                            <a href="#" class="stretched-link "><button type="button"
+                                    class="btn mt-2 btn-outline-danger">Continue</button></a>
+                        </div>
+                        <div class="col-4 ">
+                            <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
+                                alt="" height="260" width="160">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col-6 p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">Frontend</strong>
+                            <h3 class="mb-0">CSS</h3>
+                            <div class="mb-1 text-muted">Nov 11</div>
+                            <p class="card-text mb-auto">Learn CSS like never before with VS code ...
+                            </p>
+                            <a href="#" class="stretched-link"><button type="button"
+                                    class="btn mt-2 btn-outline-primary">Continue</button></a>
+                        </div>
+                        <div class="col-4">
+                            <img src="https://media.istockphoto.com/id/1413514596/photo/stylized-3d-css-icon-design.jpg?s=612x612&w=0&k=20&c=AO7LVxgIs-flkGxxQFXbTD6H3HLfNyq07zf8Riiu6sM="
+                                alt="" height="240" width="160">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-4">
+            <div class="row mb-2">
+                <div class="col-md-4">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col-6 p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-warning">Frontend</strong>
+                            <h3 class="mb-0">JavaScript</h3>
+                            <div class="mb-1 text-muted">Nov 12</div>
+                            <p class="card-text mb-auto">Learn JavaScript like never before with VS code ...
+                            </p>
+                            <a href="#" class="stretched-link"><button type="button"
+                                    class="btn mt-2 btn-outline-warning">Continue</button> </a>
+                        </div>
+                        <div class="col-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                width="160" height="280" x="0" y="0" viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                <g>
+                                    <path fill="#ffdf00" d="M0 0h512v512H0z" data-original="#ffdf00" class="">
+                                    </path>
+                                    <path
+                                        d="M343.934 400.002c10.313 16.839 23.731 29.216 47.462 29.216 19.935 0 32.67-9.964 32.67-23.731 0-16.498-13.084-22.341-35.027-31.939l-12.028-5.161c-34.719-14.791-57.783-33.321-57.783-72.493 0-36.084 27.494-63.553 70.461-63.553 30.59 0 52.582 10.646 68.429 38.522l-37.465 24.056c-8.249-14.791-17.148-20.618-30.964-20.618-14.092 0-23.024 8.94-23.024 20.618 0 14.434 8.94 20.277 29.582 29.217l12.028 5.152c40.879 17.53 63.959 35.401 63.959 75.581 0 43.317-34.028 67.048-79.726 67.048-44.682 0-73.549-21.293-87.674-49.201zm-169.96 4.169c7.558 13.41 14.434 24.747 30.964 24.747 15.807 0 25.779-6.185 25.779-30.232V235.089h48.112v164.246c0 49.818-29.208 72.493-71.843 72.493-38.522 0-60.83-19.936-72.176-43.947z"
+                                        fill="#000000" data-original="#000000"></path>
+                                </g>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col-6 p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success">Frontend</strong>
+                            <h3 class="mb-0">Python</h3>
+                            <div class="mb-1 text-muted">Nov 11</div>
+                            <p class="mb-auto">Learn Python like never before with VS code ...
+                            </p>
+                            <a href="#" class="stretched-link"><button type="button"
+                                    class="btn mt-2 btn-outline-success">Continue</button></a>
+                        </div>
+                        <div class="col-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                width="160" height="260" x="0" y="0" viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                <g>
+                                    <path
+                                        d="M116 296c0-30.328 24.672-55 55-55h170c13.785 0 25-11.215 25-25V75c0-41.355-33.645-75-75-75h-70c-41.355 0-75 33.645-75 75v41h110c8.285 0 15 6.715 15 15s-6.715 15-15 15H75c-41.355 0-75 33.645-75 75v70c0 41.355 33.645 75 75 75h41zM221 76c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0"
+                                        fill="#35c013" data-original="#000000" class=""></path>
+                                    <path
+                                        d="M437 146h-41v70c0 30.328-24.672 55-55 55H171c-13.785 0-25 11.215-25 25v141c0 41.355 33.645 75 75 75h70c41.355 0 75-33.645 75-75v-41H256c-8.285 0-15-6.715-15-15s6.715-15 15-15h181c41.355 0 75-33.645 75-75v-70c0-41.355-33.645-75-75-75zM291 436c8.285 0 15 6.715 15 15s-6.715 15-15 15-15-6.715-15-15 6.715-15 15-15zm0 0"
+                                        fill="#35c013" data-original="#000000" class=""></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  <div class="jum bg-dark display-flex align-content-center">-->
+        <div class="d-flex justify-content-center w-full" style="width: 100%; ">
+            <div class="jumbotron" class="d-flex justify-content-center  "
+                style="width: 350px; background-color: rgb(247, 249, 249);">
+                <p class="display-1 " style="font-size: xx-large;font-weight: bold;">Professional Web Designing!</p>
+                <p class="lead" style="font-size: 20px; ">Each and every step towards professionl web
+                    designer .</p>
+                <hr class="my-2">
+                <p>Are you ready to take the fiert step towards becoming frontend developer.
+                </p>
+                <p class="lead">
+                    <a class="btn btn-dark btn-ms" href="#" role="button">Learn more</a>
+                </p>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+        <div class="container marketing my-4">
+
+            <div class="cen d-flex justify-content-center">
+                <h1> KEY FEATURES.</h1>
+            </div>
+
+            <hr class="featurette-divider">
+            <!-- Three columns of text below the carousel -->
+            <div class="row ">
+                <div class="col-lg-4  ">
+                    <div class="cir d-flex justify-content-center">
+                        <img class="rounded-circle " src="images/figma.png" width="110" height="110">
+                    </div>
+                    <div class="cir d-flex justify-content-center">
+                        <h2>Figma</h2>
+                    </div>
+                    <p style="padding: 16px;">Figma is a collaborative web application for interface design, with
+                        additional offline features
+                        enabled by desktop applications for macOS and Windows.</p>
+                    <div class="cir d-flex justify-content-center">
+                        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                    </div>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="cir d-flex justify-content-center">
+                        <img class="rounded-circle" src="images/bootstrap.jpeg" width="110" height="110">
+                    </div>
+                    <div class="cir d-flex justify-content-center">
+                        <h2>Bootstrap</h2>
+                    </div>
+                    <p style="padding: 16px;">Bootstrap includes a responsive, mobile first fluid grid system that
+                        appropriately scales up to
+                        12
+                        columns as the device or viewport size increases.</p>
+                    <div class="cir d-flex justify-content-center">
+                        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                    </div>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="cir d-flex justify-content-center">
+                        <img class="rounded-circle" src="images/tailwind.png" width="110" height="110">
+                    </div>
+                    <div class="cir d-flex justify-content-center">
+                        <h2>Tailwind</h2>
+                    </div>
+                    <p style="padding: 16px;">Tailwind CSS creates small utilities with a defined set of options
+                        enabling easy integration of
+                        existing classes directly into the HTML code.</p>
+                    <div class="cir d-flex justify-content-center">
+                        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                    </div>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+
+        </div>
+        <hr class="featurette-divider">
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2017–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+
+
+    </div>
+    </div>
+
+
+
+   
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    
+</body>
+
+</html>
